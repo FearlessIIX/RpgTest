@@ -32,9 +32,9 @@ export class Health {
         
     }
     public calcMaxHealth() {
-        this.maxHealth.update((val) => val += Math.round(
-            Math.random() * this.base.health_step
-        ))
+        let step = Math.round(Math.random() * this.base.health_step)
+        if (step == 0) step = Math.round(Math.random() * this.base.health_step)
+        this.maxHealth.update((val) => val += step)
         this.health.set(get(this.maxHealth))
     }
 }

@@ -34,7 +34,7 @@ export class Player  {
     public gainXp(gainAmt : number) {
         // yeah, indeed
         let levelUps = this.level.gainXp(gainAmt)
-        for (let i = 0; i < levelUps - 1; i++) {
+        for (let i = 0; i < levelUps; i++) {
             this.calcMaxHealth()
         }
         // there is nothing changing the xp...

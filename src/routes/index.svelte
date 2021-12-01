@@ -3,7 +3,6 @@
     import { Player } from "./utils/Player"
 import { get } from "svelte/store";
     
-    
     const player : Player = new Player("Katsuro", player_base)
     
     // Imma go to bed but i'll show you how to do 1 subscirption
